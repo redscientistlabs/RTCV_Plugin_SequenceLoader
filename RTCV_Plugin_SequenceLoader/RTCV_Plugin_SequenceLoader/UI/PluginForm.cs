@@ -61,6 +61,7 @@ namespace SEQUENCELOADER.UI
             this.FormClosing += new FormClosingEventHandler(this.PluginForm_FormClosing);
             this.Text = "Sequence Loader";// CORRUPTCLOUD_LIVE.CamelCase(nameof(CORRUPTCLOUD_LIVE).Replace("_", " ")); //automatic window title
 
+            this.version.Text = $"{plugin.Version.ToString()}"; //automatic window title
         }
 
 

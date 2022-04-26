@@ -39,6 +39,7 @@ namespace SEQUENCELOADER.UI
             this.label1 = new System.Windows.Forms.Label();
             this.lbDragAndDropGH = new System.Windows.Forms.Label();
             this.btnNSFNextSong = new System.Windows.Forms.Button();
+            this.version = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSendSelectedStockpile
@@ -120,12 +121,24 @@ namespace SEQUENCELOADER.UI
             this.btnNSFNextSong.Visible = false;
             this.btnNSFNextSong.Click += new System.EventHandler(this.btnNSFNextSong_Click);
             // 
+            // version
+            // 
+            this.version.AutoSize = true;
+            this.version.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.version.ForeColor = System.Drawing.Color.White;
+            this.version.Location = new System.Drawing.Point(190, 35);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(14, 13);
+            this.version.TabIndex = 41;
+            this.version.Text = "v";
+            // 
             // PluginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(450, 250);
+            this.Controls.Add(this.version);
             this.Controls.Add(this.btnNSFNextSong);
             this.Controls.Add(this.lbDragAndDropGH);
             this.Controls.Add(this.label1);
@@ -191,5 +204,6 @@ namespace SEQUENCELOADER.UI
         public System.Windows.Forms.Label lbDragAndDropGH;
         private string dlldir;
         private Button btnNSFNextSong;
+        private Label version;
     }
 }
