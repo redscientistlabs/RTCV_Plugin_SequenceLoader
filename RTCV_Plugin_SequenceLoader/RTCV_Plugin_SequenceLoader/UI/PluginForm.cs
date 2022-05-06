@@ -39,19 +39,11 @@ namespace SEQUENCELOADER.UI
 
         Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
-        List<(string, BlastLayer)> loadedBlastLayers = null;
-        Size DefaultSize;
-
-        private bool bCancel = false;
-        private string gameID;
-        private static string flatGameId = "000000000";
         WebClient wc = new WebClient();
 
         //This dictionary will inflate forever but it would take quite a while to be noticeable.
         Dictionary<string, bool> encounteredIds = new Dictionary<string, bool>();
-        private string gameIdUrl;
-        private Timer ticker = null;
-        private Timer autoRefreshGameIdTimer;
+
 
         public PluginForm(SEQUENCELOADER _plugin)
         {
