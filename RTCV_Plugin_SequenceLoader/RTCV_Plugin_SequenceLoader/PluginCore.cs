@@ -20,7 +20,7 @@ namespace SEQUENCELOADER
         // >>> Make sure you rename BOTH the namespace and class (Very important)
         public string Description => "Quickly load sequenced songs from drag and drop";
         public string Author => "ircluzar";
-        public Version Version => new Version(1, 0, 0);
+        public Version Version => new Version(1, 0, 1);
 
         //-----[ Plugin loading workflow ]-----
 
